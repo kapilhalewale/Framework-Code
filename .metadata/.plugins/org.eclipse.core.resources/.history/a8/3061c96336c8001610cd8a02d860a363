@@ -1,0 +1,5 @@
+package com.kapil.domain;
+
+public class Product {
+
+}

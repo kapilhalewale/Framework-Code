@@ -12,9 +12,7 @@ import java.util.Date;
 
 public class Product implements Serializable
 {
-
 	private static final long serialVersionUID = -1493937818144238678L;
-
 	private int id;
 	private String productName;
 	private int quantity;
