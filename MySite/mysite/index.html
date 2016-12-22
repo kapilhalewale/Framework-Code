@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<title>Kapil Halewale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="#" class="w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>H Kapil Kumar</a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a></li>
+  <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a></li>
+  <li class="w3-hide-small w3-dropdown-hover">
+    <a href="#" class="w3-padding-large w3-hover-white" title="Admin Login"><i class="fa fa-align-justify"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#" onclick="document.getElementById('id01').style.display='block'">
+        <i class="fa fa-lock" aria-hidden="true"></i> Admin Login</a>
+      <a href="#" onclick="document.getElementById('contact').style.display='block'">
+        <i class="fa fa-volume-control-phone" aria-hidden="true"></i> Contact Page</a>
+      <a href="#" onclick="document.getElementById('aboutMe').style.display='block'">
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> About Me</a>
+      <a href="#" onclick="document.getElementById('feedback').style.display='block'">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Feedback</a>
+    </div>
+
+  </li>
+  <li class="w3-hide-small w3-right w3-dropdown-hover">
+    <a href="#" class="w3-padding-large w3-hover-white" title="profile"><i class="fa fa-th-large"></i></a>
+    <div class="w3-dropdown-content w3-white w3-card-4">
+      <a href="#">Logout</a>
+    </div>
+  </li>
+ </ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+  <ul class="w3-navbar w3-left-align w3-large w3-theme">
+    <li><a class="w3-padding-large" href="#" onclick="document.getElementById('id01').style.display='block'">Admin Login</a></li>
+    <li><a class="w3-padding-large" href="#" onclick="document.getElementById('contact').style.display='block'">Contact Us</a></li>
+    <li><a class="w3-padding-large" href="#" onclick="document.getElementById('aboutMe').style.display='block'">My Profile</a></li>
+    <li><a class="w3-padding-large" href="#" onclick="document.getElementById('feedback').style.display='block'">Feedback</a></li>
+  </ul>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-left">My Profile</h4>
+         <p class="w3-center"><img src="img/kap.jpg" class="w3-round " style="height:100%;width:100%" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Software Engineer, Java</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Bangalore, India</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> 27 Feb</p>
+        </div>
+      </div>
+      <br>
+
+      <!-- Accordion -->
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+          <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Events</button>
+          <div id="Demo2" class="w3-accordion-content w3-container">
+            <p>Please get login access to see all events</p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Photos</button>
+          <div id="Demo3" class="w3-accordion-content w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="img/kap2.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/college2.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/college.JPG" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="img/humpanch.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <!-- Interests -->
+      <div class="w3-card-2 w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Interests</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Java</span>
+            <span class="w3-tag w3-small w3-theme-d4">Hibernate</span>
+            <span class="w3-tag w3-small w3-theme-d3">Spring MVC</span>
+            <span class="w3-tag w3-small w3-theme">Struts2</span>
+            <span class="w3-tag w3-small w3-theme-d2">Spring Security</span>
+            <span class="w3-tag w3-small w3-theme-d1">Mybatis</span>
+            <span class="w3-tag w3-small w3-theme-l1">AngularJS</span>
+            <span class="w3-tag w3-small w3-theme-l2">Html5</span>
+            <span class="w3-tag w3-small w3-theme-d1">CSS</span>
+            <span class="w3-tag w3-small w3-theme-d1">Javascript</span>
+          </p>
+        </div>
+      </div>
+      <br>
+
+      <!-- Alert Box -->
+      <div class="w3-container w3-round w3-theme-l4 w3-border  w3-theme-border w3-margin-bottom w3-hide-small">
+        <span onclick="this.parentElement.style.display='none'" class="w3-hover-text-green w3-closebtn">
+          <i class="fa fa-remove"></i>
+        </span>
+        <p><strong>Hey!</strong></p>
+        <p>Welcome to the site</p>
+      </div>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">Social Media Post</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p>
+              <button type="button" class="w3-btn w3-theme"><i class="fa fa-pencil"></i> Post</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin">
+        <h4>Recent Updates</h4>
+        <div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+          <p>CURD Example using Angularjs, Spring MVC, Mybatis & MySQL has uploaded | Oct-2016.</p>
+        </div>
+        <div class="w3-panel w3-pale-red w3-leftbar w3-border-red">
+          <p>CURD Example using Angularjs, Struts2, Hibernate & MySQL has uploaded | Oct-2016.</p>
+        </div>
+
+        <div class="w3-panel w3-pale-green w3-leftbar w3-border-green">
+          <p>Spring Security with Hibernate & MySQL has updated using annotation | July-2016.</p>
+        </div>
+
+        <div class="w3-panel w3-pale-blue w3-leftbar w3-border-blue">
+          <p>Spring 3.X to Spring 4.2 with Spring Spring Security | Sept-2016.</p>
+        </div>
+
+      </div>
+      <!-- Notes -->
+          <div class="w3-card-4 w3-white w3-round w3-margin">
+            <div class="w3-container w3-card-4 w3-dark-grey">
+              <h4>Received Feedback</h4>
+            </div>
+            <ul class="w3-ul">
+              <li>
+                <img src="img/img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <span class="w3-xlarge">Gajanand Kollur</span><br>
+                <p>Fabulous work bro keep it on!!!</p>
+              </li>
+              <li>
+                <img src="img/img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <span class="w3-xlarge">Omkar Biradar</span><br>
+                <p>Nice work! </p>
+              </li>
+
+              <li>
+                <img src="img/img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <span class="w3-xlarge">Ram C</span><br>
+                <p>Nice work kapil i'm expecting something like this</p>
+              </li>
+
+            </ul>
+            <div class="w3-container w3-light-grey">
+            </div>
+            <div class="w3-container w3-dark-grey w3-xlarge">
+              <span class="w3-right"></span>
+            </div>
+          </div>
+    <!-- End Middle Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+          <button onclick="myFunction('Spring')" class="w3-btn-block w3-theme-l1 w3-left-align">
+            <i class="fa fa-th-list fa-fw w3-margin-right"></i>Spring MVC 4.X</button>
+          <div id="Spring" class="w3-accordion-content w3-container w3-animate-zoom w3-left-align">
+            <a href="#">CURD Operation</a>
+            <a href="#">File Upload</a>
+            <a href="#">Spring Form</a>
+            <a href="#">Spring Annotation Tags</a>
+            <a href="#">Dependency Injection</a>
+            <a href="#">Autowiring</a>
+          </div><br>
+          </div>
+        </div>
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+          <button onclick="myFunction('Demo12')" class="w3-btn-block w3-theme-l1 w3-left-align">
+            <i class="fa fa-th-list fa-fw w3-margin-right"></i>Hibernate 3.X</button>
+          <div id="Demo12" class="w3-accordion-content w3-container w3-animate-zoom w3-left-align">
+            <a href="#">Mybatis Configuration</a>
+            <a href="#">Mybatis SQL Mapper</a>
+            <a href="#">Mybatis Create</a>
+            <a href="#">Mybatis Update</a>
+            <a href="#">Mybatis Read</a>
+            <a href="#">Mybatis Drop</a>
+            <a href="#">Stored Procedures</a>
+            <a href="#">Mybatis Dynamic Sql</a>
+            <a href="#">Annotation</a>
+            <a href="#">Associations</a>
+            <a href="#">Collections</a>
+          </div><br>
+          </div>
+        </div>
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+          <button onclick="myFunction('mybatis')" class="w3-btn-block w3-theme-l1 w3-left-align">
+            <i class="fa fa-th-list fa-fw w3-margin-right"></i> Mybatis 3</button>
+          <div id="mybatis" class="w3-accordion-content w3-container w3-animate-zoom w3-left-align">
+            <a href="#">Mybatis Configuration</a>
+            <a href="#">Mybatis SQL Mapper</a>
+            <a href="#">Mybatis Create</a>
+            <a href="#">Mybatis Update</a>
+            <a href="#">Mybatis Read</a>
+            <a href="#">Mybatis Drop</a>
+            <a href="#">Stored Procedures</a>
+            <a href="#">Mybatis Dynamic Sql</a>
+            <a href="#">Annotation</a>
+            <a href="#">Associations</a>
+            <a href="#">Collections</a>
+          </div><br>
+          </div>
+        </div>
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+          <button onclick="myFunction('Struts2')" class="w3-btn-block w3-theme-l1 w3-left-align">
+            <i class="fa fa-th-list fa-fw w3-margin-right"></i> Struts 2</button>
+          <div id="Struts2" class="w3-accordion-content w3-container w3-animate-zoom w3-left-align">
+            <a href="#">Configuration</a>
+            <a href="#">Actions & Interceptors</a>
+            <a href="#">Result Types</a>
+            <a href="#">Struts Tags</a>
+            <a href="#">File Upload</a>
+            <a href="#">Control & Ajax Tags</a>
+            <a href="#">Value Stag</a>
+          </div><br>
+          </div>
+        </div>
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+          <button onclick="myFunction('Demo201')" class="w3-btn-block w3-theme-l1 w3-left-align">
+            <i class="fa fa-th-list fa-fw w3-margin-right"></i> Other Integrations</button>
+          <div id="Demo201" class="w3-accordion-content w3-container w3-animate-zoom w3-left-align">
+            <a href="#"> <i class="fa fa-exchange"></i> Spring MVC & Spring Security</a>
+            <a href="#"><i class="fa fa-exchange"></i> Struts2 & Spring Security</a>
+            <a href="#"><i class="fa fa-exchange"></i> Spring & Mybatis</a>
+            <a href="#"><i class="fa fa-exchange"></i> Struts2 & Mybatis</a>
+            <a href="#"><i class="fa fa-exchange"></i> Spring & Hibernate</a>
+            <a href="#"><i class="fa fa-exchange"></i> Struts2 & Hibernate</a>
+            <a href="#"><i class="fa fa-exchange"></i> Spring MVC & AngularJS </a>
+            <a href="#"><i class="fa fa-exchange"></i> Struts2 & AngularJS </a>
+          </div><br>
+          </div>
+        </div><br>
+
+      <div class="w3-card-2 w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Upcoming Events:</p>
+          <img src="img/forest.jpg" alt="Forest" style="width:100%;">
+          <p><strong>Holiday</strong></p>
+          <p>Friday 15:00</p>
+          <p><button class="w3-btn w3-btn-block w3-theme-l4">Info</button></p>
+        </div>
+      </div>
+
+      <div class="w3-panel w3-theme-l1 w3-card-8">
+          <p>
+            <i class="fa fa-sort-numeric-asc" aria-hidden="true"></i>
+             Website hits : 85788
+          </p>
+      </div>
+    <!-- End Right Column -->
+
+
+<!-- End Grid -->
+  </div>
+
+<!-- End Page Container -->
+</div>
+<br>
+<!-- Login Model -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-#7d97a5 w3-animate-zoom" style="max-width:400px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn w3-hover-red w3-container w3-padding-8 w3-display-topright" title="Close Modal">&times;</span>
+        <h4>Admin Login Page</h4>
+      </div>
+
+      <form class="w3-container" action="#">
+        <div class="w3-section">
+          <label><b>Username</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="w3-btn-block w3-green w3-section w3-padding" type="submit">Login</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+        <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="aboutMe" class="w3-modal">
+      <div class="w3-modal-content w3-card-8 w3-#7d97a5 w3-animate-zoom" style="max-width:400px">
+
+        <div class="w3-card-8" style="width:100%">
+              <header class="w3-container w3-light-grey">
+                <h3>H Kapil Kumar</h3>
+              </header>
+            <div class="w3-container">
+                <hr>
+                <img src="img/kap.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <p>Software Developer At VIT Software<br>
+                <i class="fa fa-mobile" aria-hidden="true"></i> : 8147383148 |
+                <i class="fa fa-envelope-o" aria-hidden="true"></i> : kapil@gmail.com</p><br>
+            </div>
+            <button class="w3-btn-block w3-dark-grey" onclick="document.getElementById('aboutMe').style.display='none'">+ close</button>
+          </div>
+      </div>
+    </div>
+  <!--Contact Code -->
+  <div id="contact" class="w3-modal">
+      <div class="w3-modal-content w3-card-8 w3-#7d97a5 w3-animate-zoom" style="max-width:600px">
+          <div class="w3-container w3-green">
+            <h4>Contact Us</h4>
+          </div>
+          <form class="w3-container">
+            <p> <label>Full Name</label></p>
+              <input class="w3-input" type="text">
+            <p><label>Email Address</label></p>
+              <input class="w3-input" type="text">
+              <p><label>Mobile Number</label></p>
+                <input class="w3-input" type="text">
+                <p><label>Message</label></p>
+                  <input class="w3-input" type="text">
+          </form>
+        <br>
+        <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+          <button onclick="#" type="button" class="w3-btn w3-green">Send</button>
+          <button onclick="document.getElementById('contact').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Contact Code -->
+    <div id="feedback" class="w3-modal">
+        <div class="w3-modal-content w3-card-8 w3-#7d97a5 w3-animate-zoom" style="max-width:400px">
+            <div class="w3-container w3-dark-grey">
+              <h4>Love to here you</h4>
+            </div>
+            <form class="w3-container">
+              <p> <label>Full Name</label></p>
+                <input class="w3-input" type="fullname">
+              <p><label>Email Address</label></p>
+                <input class="w3-input" type="email">
+                  <p><label>Feedback</label></p>
+                    <input class="w3-input" type="feedback">
+            </form>
+          <br>
+          <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+            <button onclick="#" type="button" class="w3-btn w3-green">Send Feddback</button>
+            <button onclick="document.getElementById('feedback').style.display='none'" type="button" class="w3-btn w3-red">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d5">
+  <p>Designed & Developed By <a href="http://kapilhalewale.in/" target="_blank">H Kapil Kumar 2016</a></p>
+</footer>
+
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else {
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
